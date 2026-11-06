@@ -1,0 +1,5 @@
+variant,group,gap,no_aug_gap,time,n,model,seed
+tsp,seen,147.7479,198.8257,1.37,100,matroute_init,1234
+cvrp,seen,97.7817,266.5749,3.56,100,matroute_init,1234
+cvrptw,seen,77.0667,149.7644,5.83,100,matroute_init,1234
+pdtsp,seen,250.907,304.5748,1.71,100,matroute_init,1234

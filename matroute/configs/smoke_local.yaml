@@ -1,0 +1,31 @@
+preset: smoke_local
+model:
+  layout_preset: d64
+  num_encoder_layers: 2
+  zeta: 50.0
+  soft_core: false
+  stopgrad_core: false
+
+training:
+  problem_size: 20
+  batch_size: 16
+  pomo_size: 20
+  capacity: 50.0
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-6
+  warmup_ratio: 0.20
+  lambda_dist_start: 0.10
+  lambda_dist_end: 0.02
+  total_epochs: 10
+  batches_per_epoch: 30
+  max_steps: 300
+  problems:
+    - tsp
+    - cvrp
+    - cvrptw
+    - pdtsp
+
+logging:
+  log_interval: 25
+  checkpoint_interval_steps: 100
+  results_dir: results/local/smoke

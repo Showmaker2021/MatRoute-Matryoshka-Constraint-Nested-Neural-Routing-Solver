@@ -1,0 +1,28 @@
+preset: full_d128
+model:
+  layout_preset: d128
+  num_encoder_layers: 12
+  zeta: 50.0
+  soft_core: false
+  stopgrad_core: false
+
+training:
+  problem_size: 100
+  batch_size: 128
+  pomo_size: 100
+  capacity: 50.0
+  learning_rate: 1.0e-4
+  weight_decay: 1.0e-6
+  lr_decay_epoch: 451
+  lr_decay_factor: 0.1
+  warmup_ratio: 0.20
+  lambda_dist_start: 0.10
+  lambda_dist_end: 0.02
+  total_epochs: 500
+  batches_per_epoch: 2000
+  problems: train_problem_list
+
+logging:
+  log_interval: 100
+  checkpoint_interval_epochs: 10
+  results_dir: results/full_d128

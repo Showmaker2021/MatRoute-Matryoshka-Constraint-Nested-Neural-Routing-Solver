@@ -1,0 +1,9 @@
+Type,N,Metric_A (Dense/Full),Metric_B (Sparse/Funnel),Speedup/Ratio,Peak_Mem_A_MB,Peak_Mem_B_MB
+Decoder,200,0.433,0.765,0.57,16.45,16.72
+Decoder,500,0.313,1.004,0.31,21.94,22.58
+Decoder,1000,0.418,1.606,0.26,31.1,32.35
+Decoder,2000,0.853,2.355,0.36,49.47,51.94
+Encoder,200,33.46,39.86,-,195.25,201.9
+Encoder,500,83.4,103.71,-,939.76,979.96
+Encoder,1000,261.44,336.64,-,3444.07,3586.53
+Encoder,2000,OOM,OOM,-,OOM,OOM

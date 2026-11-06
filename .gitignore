@@ -1,7 +1,10 @@
 .vscode
 *.pyc
 __pycache__/**
+.pytest_cache/**
 result_*
 *.log
-*.txt
 *.pt
+checkpoints/**
+results/local/**
+results/test_smoke.csv
